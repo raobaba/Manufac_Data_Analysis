@@ -1,12 +1,18 @@
-import './App.css';
+// src/components/App/App.tsx
+import React from 'react';
+import './App.css'
+import ClassStatisticsTable from './components/ClassStatisticsTable/ClassStatisticsTable';
+import GammaStatisticsTable from './components/GammaStatisticsTable/GammaStatisticsTable';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-     
-      <h1>Working properly</h1>
+    <div>
+      <h1>Class-wise Statistics for Flavanoids</h1>
+      <ClassStatisticsTable />
+      <h1>Class-wise Statistics for Gamma</h1>
+      <GammaStatisticsTable />
     </div>
   );
-}
+};
 
 export default App;
